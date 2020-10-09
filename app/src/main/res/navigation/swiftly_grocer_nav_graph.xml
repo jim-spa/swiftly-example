@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shopping_nav"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/current_manager_specials_dest"
+        android:name="com.sirisdevelopment.swiftly.ui.specials.CurrentManagersSpecialsDisplayFragment"
+        android:label="fragment_current_manager_specials"
+        tools:layout="@layout/fragment_current_manager_specials">
+        <action
+            android:id="@+id/action_managers_specials_to_home"
+            app:destination="@+id/home_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.sirisdevelopment.swiftly.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_managers_specials"
+            app:destination="@+id/current_manager_specials_dest" />
+    </fragment>
+
+</navigation>

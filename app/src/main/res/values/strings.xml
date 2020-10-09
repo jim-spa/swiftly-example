@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Swiftly Manager Specials</string>
+    <string name="title_managers_specials">Manager\'s Specials</string>
+    <string name="manager_special_title_text">Manager\'s Specials</string>
+    <string name="home_btn">Home</string>
+</resources>
